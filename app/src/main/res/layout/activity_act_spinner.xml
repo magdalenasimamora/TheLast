@@ -8,195 +8,196 @@
     tools:context=".ActSpinner">
 
     <TextView
-        android:id="@+id/txtView1"
+        android:id="@+id/tvBidangUsaha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="467dp"
+        android:text="Pilih Bidang Usaha:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNamaPerusahaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
         android:layout_marginTop="75dp"
-        android:textStyle="bold"
-        android:text="Masukkan nama Perusahaan :" />
+        android:text="Masukkan nama Perusahaan :"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txtName"
+        android:id="@+id/etNamaPerusahaan"
         android:layout_width="407dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtView1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"/>
-
-    <TextView
-        android:id="@+id/txtView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="140dp"
-        android:textStyle="bold"
-        android:text="Masukkan nama Pimpinan :" />
-
-    <EditText
-        android:id="@+id/txtName2"
-        android:layout_width="410dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtView1"
+        android:layout_below="@+id/tvNamaPerusahaan"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="273dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"/>
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp" />
+
+    <TextView
+        android:id="@+id/tvNamaPimpinan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="157dp"
+        android:text="Masukkan nama Pimpinan :"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txtName3"
+        android:id="@+id/etNamaPimpinan"
         android:layout_width="408dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtView1"
+        android:layout_below="@+id/tvNamaPerusahaan"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"/>
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp" />
 
     <TextView
-        android:id="@+id/txtView6"
+        android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="209dp"
-        android:textStyle="bold"
-        android:text="Masukkan Email :" />
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="246dp"
+        android:text="Masukkan Email :"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txtName5"
+        android:id="@+id/etEmail"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtView1"
+        android:layout_below="@+id/tvNamaPerusahaan"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="135dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"/>
-
-    <TextView
-        android:id="@+id/txtView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="274dp"
-        android:textStyle="bold"
-        android:text="Masukkan No.HP :" />
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp" />
 
     <TextView
-        android:id="@+id/txtView"
+        android:id="@+id/tvMobilePhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="346dp"
-        android:textStyle="bold"
-        android:text="Masukkan No.HP :" />
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="344dp"
+        android:text="Masukkan No.HP :"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/txtName9"
+        android:id="@+id/etKontak"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtView1"
+        android:layout_below="@+id/tvNamaPerusahaan"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="202dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="277dp"
         android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"/>
+        android:layout_marginRight="0dp" />
 
     <TextView
         android:id="@+id/lblPilih"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="-4dp"
+        android:text="Masukkan No.HP :"
         android:textSize="0pt"
         android:textStyle="bold" />
 
     <Spinner
-        android:id="@+id/spnPilih"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/btnSimpan"
+        android:id="@+id/spinBidangUsaha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="506dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNamaPerusahaan"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="-2dp"
         android:layout_marginLeft="-2dp"
-        android:layout_marginTop="287dp"
+        android:layout_marginTop="436dp"
         android:layout_marginEnd="2dp"
         android:layout_marginRight="2dp"
         android:text="Simpan" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama Perusahaan :"
-        android:id="@+id/txtView2"
-        android:layout_below="@+id/btnSimpan"
-        android:layout_marginTop="24dp" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Nama Perusahaan :"-->
+        <!--android:id="@+id/txtView2"-->
+        <!--android:layout_below="@+id/btnSimpan"-->
+        <!--android:layout_marginTop="24dp" />-->
 
-    <TextView
-        android:id="@+id/txtView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSimpan"
-        android:layout_marginTop="53dp"
-        android:text="Nama Pimpinan :" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtViewName"
-        android:layout_marginTop="26dp"
-        android:layout_below="@+id/txtView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <!--<TextView-->
+        <!--android:id="@+id/txtView4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/btnSimpan"-->
+        <!--android:layout_marginTop="53dp"-->
+        <!--android:text="Nama Pimpinan :" />-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/txtViewName"-->
+        <!--android:layout_marginTop="26dp"-->
+        <!--android:layout_below="@+id/txtView2"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
 
 
 </RelativeLayout>

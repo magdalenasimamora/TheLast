@@ -13,6 +13,20 @@
     <string name="MK6">Jasa Pelaksana Konstruksi Pertambangan dan Manufaktur</string>
     <string name="MK7">Jasa Pelaksana Konstruksi Instalasi Alat Angkut dan Alat Angkat</string>
 
+    <string-array name="bidang_usaha_array">
+        <item>Jasa Pelaksana Konstruksi Pemasangan Pendingin Udara (Air Conditioner)</item>
+        <item>Jasa Pelaksana Konstruksi Pemasangan Pipa air (Plumbing) Dalam Bangunan dan Salurannya</item>
+        <item>Jasa Pelaksana Konstruksi Pemasangan Pipa Gas Dalam Bangunan</item>
+        <item>Jasa Pelaksana Konstruksi Insulasi Dalam Bangunan</item>
+        <item>Jasa Pelaksana Konstruksi Pemasangan Lift dan Tangga Berjalan</item>
+        <item>Jasa Pelaksana Konstruksi Pertambangan dan Manufaktur</item>
+        <item>Jasa Pelaksana Konstruksi Instalasi Thermal, Bertekanan, Minyak dan Gas, Geothermal (Pekerjaan Rekayasa)</item>
+        <item>Jasa Pelaksana Konstruksi Instalasi Alat Angkut dan Alat Angkat</item>
+        <item>Jasa Pelaksana Konstruksi Instalasi Perpipaan, Gas, Energi (Pekerjaan Rekayasa)</item>
+        <item>Jasa Pelaksana Konstruksi Instalasi Pembangkit Tenaga Listrik Semua Daya</item>
+        <item>Jasa Pelaksana Konstruksi Instalasi Jaringan Transmisi Tenaga Listrik Tegangan Tinggi/Ekstra Tegangan Tinggi</item>
+    </string-array>
+
     <string-array name="pilihkelas">
     <item>--Pilih--</item>
     <item>A</item>
