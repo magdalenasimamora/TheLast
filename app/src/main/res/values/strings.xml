@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="pilih">Bidang Usaha:</string>
+    <string name="hasil">klikHasil</string>
+    <string name="submit">Submit</string>
+    <string name="output">Mata Kuliah yang dipilih :</string>
+    <string name="MK1">Jasa Pelaksana Konstruksi Pemasangan Pendingin Udara (Air Conditioner</string>
+    <string name="MK2">Jasa Pelaksana Konstruksi Pemasangan Pipa air (Plumbing) Dalam Bangunan dan Salurannya</string>
+    <string name="MK3">Jasa Pelaksana Konstruksi Pemasangan Pipa Gas Dalam Bangunan</string>
+    <string name="MK4">Jasa Pelaksana Konstruksi Insulasi Dalam Bangunan</string>
+    <string name="MK5">Jasa Pelaksana Konstruksi Pemasangan Lift dan Tangga Berjalan</string>
+    <string name="MK6">Jasa Pelaksana Konstruksi Pertambangan dan Manufaktur</string>
+    <string name="MK7">Jasa Pelaksana Konstruksi Instalasi Alat Angkut dan Alat Angkat</string>
+
+    <string-array name="pilihkelas">
+    <item>--Pilih--</item>
+    <item>A</item>
+    <item>B</item>
+    <item>D</item>
+    <item>E</item>
+    <item>F</item>
+    <item>G</item>
+    <item>H</item>
+    <item>I</item>
+    <item>J</item>
+    <item>K</item>
+    <item>L</item>
+    <item>M</item>
+    <item>N</item>
+    </string-array>
+
+    <string-array name="pilihagama">
+    <item>--Pilih--</item>
+    <item>Islam</item>
+    <item>Katolik</item>
+    <item>Protestan</item>
+    <item>Budha</item>
+    <item>Hindu</item>
+    <item>Konghucu</item>
+    </string-array>
+    <string name="hello">Hello World, form_activity!</string>
+    <string name="app_name">OODSgroup</string>
+    <string name="formTitle">OODS Join</string>
+    <string name="namaTitle">Nama Perusahaan</string>
+    <string name="nrpTitle">Nama Pemimpin</string>
+    <string name="jurTitle">Email</string>
+    <string name="angkatanTitle">Mobile</string>
+
+    <string name="SubmitTitle">Save</string>
+    <string name="CancelTitle">Cancel</string>
+
+    <string name="JK1">A</string>
+    <string name="JK2">B</string>
+
+    <!--<string name="A">A</string>-->
+    <!--<string name="B">B</string>-->
+    <!--<string name="C">C</string>-->
+    <!--<string name="D">D</string>-->
+    <!--<string name="E">E</string>-->
+    <!--<string name="F">F</string>-->
+    <!--<string name="Pilih">&#45;&#45;Pilih&#45;&#45;</string>-->
+    <!--<string name="Islam">Islam</string>-->
+    <!--<string name="Katolik">Katolik</string>-->
+    <!--<string name="Protestan">Protestan</string>-->
+    <!--<string name="Budha">Budha</string>-->
+    <!--<string name="Hindu">Hindu</string>-->
+    <!--<string name="Konghucu">Konghucu</string>-->
+    <!--<string name="title_activity_crud">crud</string>-->
+    <!--<string name="tab_text_1">Tab 1</string>-->
+    <!--<string name="tab_text_2">Tab 2</string>-->
+    <!--<string name="title_activity_main2">Main2Activity</string>-->
+    <!--<string name="title_activity_basic">Basic</string>-->
+</resources>

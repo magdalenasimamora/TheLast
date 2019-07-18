@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="JKlist">
+        <item>@string/JK1</item>
+        <item>@string/JK2</item>
+    </string-array>
+    <!--<string-array name="pilihkelas">-->
+        <!--<item   >@string/A</item>-->
+        <!--<item   >@string/B</item>-->
+        <!--<item   >@string/D</item>-->
+        <!--<item   >@string/E</item>-->
+        <!--<item   >@string/F</item>-->
+
+    <!--</string-array>-->
+
+    <!--<string-array name="pilihagama">-->
+        <!--<item   >@string/Islam</item>-->
+        <!--<item   >@string/Katolik</item>-->
+        <!--<item   >@string/Protestan</item>-->
+        <!--<item   >@string/Budha</item>-->
+        <!--<item   >@string/Hindu</item>-->
+        <!--<item   >@string/Konghucu</item>-->
+    <!--</string-array>-->
+</resources>

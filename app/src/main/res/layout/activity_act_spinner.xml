@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    tools:context=".ActSpinner">
+
+    <TextView
+        android:id="@+id/txtView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="75dp"
+        android:textStyle="bold"
+        android:text="Masukkan nama Perusahaan :" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"/>
+
+    <TextView
+        android:id="@+id/txtView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="140dp"
+        android:textStyle="bold"
+        android:text="Masukkan nama Pimpinan :" />
+
+    <EditText
+        android:id="@+id/txtName2"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="273dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"/>
+
+    <EditText
+        android:id="@+id/txtName3"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"/>
+
+    <TextView
+        android:id="@+id/txtView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="209dp"
+        android:textStyle="bold"
+        android:text="Masukkan Email :" />
+
+    <EditText
+        android:id="@+id/txtName5"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"/>
+
+    <TextView
+        android:id="@+id/txtView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="274dp"
+        android:textStyle="bold"
+        android:text="Masukkan No.HP :" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="346dp"
+        android:textStyle="bold"
+        android:text="Masukkan No.HP :" />
+
+    <EditText
+        android:id="@+id/txtName9"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"/>
+
+    <TextView
+        android:id="@+id/lblPilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="0pt"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnPilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="287dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Simpan" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Perusahaan :"
+        android:id="@+id/txtView2"
+        android:layout_below="@+id/btnSimpan"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/txtView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSimpan"
+        android:layout_marginTop="53dp"
+        android:text="Nama Pimpinan :" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewName"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/txtView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
