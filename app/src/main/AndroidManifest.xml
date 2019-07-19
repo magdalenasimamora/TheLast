@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.oods.thelast">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,13 +13,13 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ActSpinner"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Splashscreen" >
-        <!--<activity android:name=".Crud.Satu">-->
+        <activity android:name=".Splashscreen">
+
+            <!-- <activity android:name=".Crud.Satu"> -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

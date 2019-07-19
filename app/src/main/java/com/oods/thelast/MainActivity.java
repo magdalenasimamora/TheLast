@@ -24,7 +24,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private static final int MY_REQUEST_CODE = 7117 ; //Any Number You want
+    private static final int MY_REQUEST_CODE = 7117; //Any Number You want
     List<AuthUI.IdpConfig> providers;
     Button btn_sign_out;
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Logout
                 AuthUI.getInstance()
-                        .signOut(MainActivity.this  )
+                        .signOut(MainActivity.this)
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(MainActivity.this, ""+e.getMessage(),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -74,30 +74,29 @@ public class MainActivity extends AppCompatActivity {
 
     private void showSignInOptions() {
         startActivityForResult(
-            AuthUI.getInstance().createSignInIntentBuilder()
-                    .setAvailableProviders(providers)
-                .setTheme(R.style.MyTheme)
-                .build(),MY_REQUEST_CODE
+                AuthUI.getInstance().createSignInIntentBuilder()
+                        .setAvailableProviders(providers)
+                        .setTheme(R.style.MyTheme)
+                        .build(), MY_REQUEST_CODE
         );
     }
+
     @Override
-    protected void onActivityResult(int requestCode,int resultCode, @Nullable Intent data){
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == MY_REQUEST_CODE)
-        {
+        if (requestCode == MY_REQUEST_CODE) {
             IdpResponse response = IdpResponse.fromResultIntent(data);
-            if (resultCode == RESULT_OK)
-            {
+            if (resultCode == RESULT_OK) {
                 //Get User
-                FirebaseUser user  = FirebaseAuth.getInstance().getCurrentUser();
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 //show email on toast
-                Toast.makeText(this, ""+user.getEmail(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "" + user.getEmail(), Toast.LENGTH_SHORT).show();
                 //Set button Sign Out
                 btn_sign_out.setEnabled(true);
-            }
-            else {
-                Toast.makeText(this, ""+response.getError().getMessage(), Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "" + response.getError().getMessage(), Toast.LENGTH_SHORT).show();
             }
         }
     }
+
 }
