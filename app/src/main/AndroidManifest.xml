@@ -11,8 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".PilihGedung"></activity>
+        <activity android:name=".DetailJasa" />
         <activity
-            android:name=".ActSpinner"
+            android:name=".AddJasa"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Add Jasa"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"

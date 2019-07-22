@@ -3,12 +3,11 @@ package com.oods.thelast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
@@ -19,40 +18,83 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private static final int MY_REQUEST_CODE = 7117; //Any Number You want
     List<AuthUI.IdpConfig> providers;
-    Button btn_sign_out;
+
+    CardView cvAdd, cvAbout, cvExit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageView showRide = (ImageView) findViewById(R.id.go_add);
+//        ImageView showRide = (ImageView) findViewById(R.id.go_add);
+//
+//        showRide.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, ActSpinner.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        btn_sign_out = (Button) findViewById(R.id.btn_sign_out);
+//        btn_sign_out.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //Logout
+//                AuthUI.getInstance()
+//                        .signOut(MainActivity.this)
+//                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<Void> task) {
+//                                btn_sign_out.setEnabled(false);
+//                                showSignInOptions();
+//                            }
+//                        }).addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                        Toast.makeText(MainActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//            }
+//        });
 
-        showRide.setOnClickListener(new View.OnClickListener() {
+        /*
+            Add by Sehat
+            =>action tiap cardview
+         */
+
+        cvAbout = findViewById(R.id.cvAbout);
+        cvAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ActSpinner.class);
+
+            }
+        });
+
+        cvAdd = findViewById(R.id.cvAdd);
+        cvAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PilihGedung.class);
                 startActivity(intent);
             }
         });
 
-        btn_sign_out = (Button) findViewById(R.id.btn_sign_out);
-        btn_sign_out.setOnClickListener(new View.OnClickListener() {
+        cvExit = findViewById(R.id.cvExit);
+        cvExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Logout
                 AuthUI.getInstance()
                         .signOut(MainActivity.this)
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
-                                btn_sign_out.setEnabled(false);
+                                cvExit.setEnabled(false);
                                 showSignInOptions();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
@@ -63,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
+
         //Init Provider
         providers = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build(),
@@ -92,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 //show email on toast
                 Toast.makeText(this, "" + user.getEmail(), Toast.LENGTH_SHORT).show();
                 //Set button Sign Out
-                btn_sign_out.setEnabled(true);
+                cvExit.setEnabled(true);
             } else {
                 Toast.makeText(this, "" + response.getError().getMessage(), Toast.LENGTH_SHORT).show();
             }

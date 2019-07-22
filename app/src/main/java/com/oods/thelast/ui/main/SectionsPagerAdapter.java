@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.oods.thelast.R;
-import com.oods.thelast.customer;
+//import com.oods.thelast.customer;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -31,8 +31,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
 
-        return customer.PlaceholderFragment.newInstance(position + 1);
-
+//        return customer.PlaceholderFragment.newInstance(position + 1);
+        return null;
     }
 
     @Override

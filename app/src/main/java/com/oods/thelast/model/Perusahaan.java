@@ -3,18 +3,28 @@ package com.oods.thelast.model;
 import java.io.Serializable;
 
 public class Perusahaan implements Serializable {
+    private String key;
     private String namaPerusahaan;
     private String namaPemimpin;
     private String email;
     private String kontak;
     private String bidangUsaha;
 
-    public Perusahaan(String namaPerusahaan, String namaPemimpin, String email, String kontak, String bidangUsaha) {
+    public Perusahaan(String key, String namaPerusahaan, String namaPemimpin, String email, String kontak, String bidangUsaha) {
+        this.key = key;
         this.namaPerusahaan = namaPerusahaan;
         this.namaPemimpin = namaPemimpin;
         this.email = email;
         this.kontak = kontak;
         this.bidangUsaha = bidangUsaha;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public String getNamaPerusahaan() {
@@ -60,7 +70,8 @@ public class Perusahaan implements Serializable {
     @Override
     public String toString() {
         return "Perusahaan{" +
-                "namaPerusahaan='" + namaPerusahaan + '\'' +
+                "key='" + key + '\'' +
+                ", namaPerusahaan='" + namaPerusahaan + '\'' +
                 ", namaPemimpin='" + namaPemimpin + '\'' +
                 ", email='" + email + '\'' +
                 ", kontak='" + kontak + '\'' +
