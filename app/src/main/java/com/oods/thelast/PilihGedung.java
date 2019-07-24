@@ -22,5 +22,37 @@ public class PilihGedung extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        CardView cvSipil = findViewById(R.id.cvSipil);
+        cvSipil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddJasa.class);
+                startActivity(intent);
+            }
+        });
+        CardView cvElektrikal = findViewById(R.id.cvElektrikal);
+        cvElektrikal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddJasa.class);
+                startActivity(intent);
+            }
+        });
+        CardView cvSpesialis = findViewById(R.id.cvSpesialis);
+        cvSpesialis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddJasa.class);
+                startActivity(intent);
+            }
+        });
+        CardView cvKeterampilan = findViewById(R.id.cvKeterampilan);
+        cvKeterampilan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddJasa.class);
+                startActivity(intent);
+            }
+        });
     }
 }

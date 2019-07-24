@@ -21,11 +21,13 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class MainActivity extends AppCompatActivity {
     private static final int MY_REQUEST_CODE = 7117; //Any Number You want
     List<AuthUI.IdpConfig> providers;
 
     CardView cvAdd, cvAbout, cvExit;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +65,6 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        /*
-            Add by Sehat
-            =>action tiap cardview
-         */
 
         cvAbout = findViewById(R.id.cvAbout);
         cvAbout.setOnClickListener(new View.OnClickListener() {
@@ -132,14 +130,32 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 //Get User
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                //show email on toast
-                Toast.makeText(this, "" + user.getEmail(), Toast.LENGTH_SHORT).show();
-                //Set button Sign Out
-                cvExit.setEnabled(true);
-            } else {
-                Toast.makeText(this, "" + response.getError().getMessage(), Toast.LENGTH_SHORT).show();
+                if (user != null) {
+                    String email = user.getEmail();
+
+                    boolean emailVerified = user.isEmailVerified();
+
+                    String uid = user.getUid();
+                    System.out.println("email user" + email);
+                    if ("alamat email admin1".equals(user.getEmail()) || "indonesiahebatpertama@gmail.com".equals(user.getEmail())) {
+                        Intent intent = new Intent(MainActivity.this, AdminActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent intent = new Intent(MainActivity.this, PilihGedung.class);
+                        startActivity(intent);
+                    }
+
+                }
             }
+
         }
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+            finish();
+        }
 
-}
+    }
+
+

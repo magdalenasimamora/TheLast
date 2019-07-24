@@ -11,6 +11,24 @@
     <string name="MK5">Jasa Pelaksana Konstruksi Pemasangan Lift dan Tangga Berjalan</string>
     <string name="MK6">Jasa Pelaksana Konstruksi Pertambangan dan Manufaktur</string>
     <string name="MK7">Jasa Pelaksana Konstruksi Instalasi Alat Angkut dan Alat Angkat</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
 
     <string-array name="bidang_usaha_array">
         <item>Jasa Pelaksana Konstruksi Pemasangan Pendingin Udara (Air Conditioner)</item>
@@ -53,7 +71,7 @@
         <item>Konghucu</item>
     </string-array>
     <string name="hello">Hello World, form_activity!</string>
-    <string name="app_name">OODSgroup</string>
+    <string name="app_name">PT Indonesia Hebat Pertama</string>
     <string name="formTitle">OODS Join</string>
     <string name="namaTitle">Nama Perusahaan</string>
     <string name="nrpTitle">Nama Pemimpin</string>
@@ -68,6 +86,8 @@
     <string name="title_activity_customer">customer</string>
     <string name="tab_text_1">Join</string>
     <string name="tab_text_2">History</string>
+    <string name="Customer">Customer</string>
+    <string name="Guest">Guest</string>
 
     <!--<string name="A">A</string>-->
     <!--<string name="B">B</string>-->
@@ -100,5 +120,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="web">https://www.oodsgroup.com</string>
     <string name="elektrikal_mekanikal"><![CDATA[Elektrikal & Mekanikal]]></string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>

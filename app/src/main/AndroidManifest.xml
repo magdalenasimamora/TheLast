@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PilihGedung"></activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"></activity>
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".Android" />
+        <activity android:name=".About" />
+        <activity android:name=".PilihSipil" />
+        <activity android:name=".PilihGedung" />
         <activity android:name=".DetailJasa" />
         <activity
             android:name=".AddJasa"

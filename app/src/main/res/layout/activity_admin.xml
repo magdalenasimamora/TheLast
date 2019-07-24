@@ -67,7 +67,7 @@
 
                     <ImageView
                         android:id="@+id/s"
-                        android:src="@drawable/ic_person"
+                        android:src="@drawable/ic_notifications"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
 
