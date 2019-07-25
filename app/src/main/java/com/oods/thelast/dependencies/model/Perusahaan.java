@@ -1,14 +1,15 @@
-package com.oods.thelast.model;
+package com.oods.thelast.dependencies.model;
 
-import java.io.Serializable;
-
-public class Perusahaan implements Serializable {
+public class Perusahaan {
     private String key;
     private String namaPerusahaan;
     private String namaPemimpin;
     private String email;
     private String kontak;
     private String bidangUsaha;
+
+    public Perusahaan() {
+    }
 
     public Perusahaan(String key, String namaPerusahaan, String namaPemimpin, String email, String kontak, String bidangUsaha) {
         this.key = key;

@@ -1,4 +1,4 @@
-package com.oods.thelast;
+package com.oods.thelast.component;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -6,6 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.oods.thelast.R;
 
 public class PilihGedung extends AppCompatActivity {
 

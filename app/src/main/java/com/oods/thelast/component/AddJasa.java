@@ -1,4 +1,4 @@
-package com.oods.thelast;
+package com.oods.thelast.component;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,8 +23,9 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.oods.thelast.enums.BidangJasa;
-import com.oods.thelast.model.Perusahaan;
+import com.oods.thelast.R;
+import com.oods.thelast.dependencies.enums.BidangJasa;
+import com.oods.thelast.dependencies.model.Perusahaan;
 
 public class AddJasa extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -66,22 +67,19 @@ public class AddJasa extends AppCompatActivity implements AdapterView.OnItemSele
         input_jasa = findViewById(R.id.input_jasa);
         btnSave = findViewById(R.id.btnSave);
 
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(!isEmpty(input_perusahaan.getText().toString()) && !isEmpty(input_pimpinan.getText().toString()) && !isEmpty(input_email.getText().toString()) && !isEmpty(input_mobile.getText().toString())){
-                    submitData();
+        btnSave.setOnClickListener(view -> {
+            if(!isEmpty(input_perusahaan.getText().toString()) && !isEmpty(input_pimpinan.getText().toString()) && !isEmpty(input_email.getText().toString()) && !isEmpty(input_mobile.getText().toString())){
+                submitData();
 
-                    startActivity(DetailJasa.createIntent(getApplicationContext(), perusahaan));
-                }
-                else
-                    Snackbar.make(findViewById(R.id.btnSave), "Data tidak boleh kosong", Snackbar.LENGTH_LONG).show();
-
-                InputMethodManager imm = (InputMethodManager)
-                        getSystemService(Context.INPUT_METHOD_SERVICE);
-                imm.hideSoftInputFromWindow(
-                        input_perusahaan.getWindowToken(), 0);
+                startActivity(DetailJasa.createIntent(getApplicationContext(), key));
             }
+            else
+                Snackbar.make(findViewById(R.id.btnSave), "Data tidak boleh kosong", Snackbar.LENGTH_LONG).show();
+
+            InputMethodManager imm = (InputMethodManager)
+                    getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(
+                    input_perusahaan.getWindowToken(), 0);
         });
 
         input_jasa.setAdapter(new ArrayAdapter<BidangJasa>(this.getApplicationContext(), R.layout.spinner_item, BidangJasa.values()) {

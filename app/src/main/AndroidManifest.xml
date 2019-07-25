@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.oods.thelast">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,31 +11,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <service
-            android:name=".MyService"
-            android:enabled="false"
-            android:exported="false"></service>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <!--<service-->
+            <!--android:name=".MyService"-->
+            <!--android:enabled="false"-->
+            <!--android:exported="false"/>-->
 
-        <activity android:name=".ListActivity" />
+        <activity android:name=".component.ListData" />
+        <activity android:name=".component.AdminActivity" />
+        <activity android:name=".component.PilihGedung" />
+        <activity android:name=".component.DetailJasa" />
         <activity
-            android:name=".Home"
-            android:label="@string/title_activity_home" />
-        <activity android:name=".AdminActivity" />
-        <activity android:name=".Android" />
-        <activity android:name=".About" />
-        <activity android:name=".PilihSipil" />
-        <activity android:name=".PilihGedung" />
-        <activity android:name=".DetailJasa" />
-        <activity
-            android:name=".AddJasa"
+            android:name=".component.AddJasa"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="Add Jasa"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".component.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Splashscreen">
+        <activity android:name=".component.Splashscreen">
 
             <!-- <activity android:name=".Crud.Satu"> -->
             <intent-filter>

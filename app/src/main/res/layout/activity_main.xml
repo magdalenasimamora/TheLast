@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".component.MainActivity"
     android:orientation="vertical"
     android:padding="10dp"
     android:paddingBottom="16dp"
@@ -53,6 +53,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
+                android:clickable="true"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp">
 

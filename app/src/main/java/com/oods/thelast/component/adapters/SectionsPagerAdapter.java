@@ -1,14 +1,10 @@
-package com.oods.thelast.ui.main;
+package com.oods.thelast.component.adapters;
 
 import android.content.Context;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
-import com.oods.thelast.R;
 //import com.oods.thelast.customer;
 
 /**

@@ -1,4 +1,4 @@
-package com.oods.thelast.enums;
+package com.oods.thelast.dependencies.enums;
 
 import java.util.HashMap;
 import java.util.Map;

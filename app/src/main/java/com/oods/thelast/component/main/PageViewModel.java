@@ -1,4 +1,4 @@
-package com.oods.thelast.ui.main;
+package com.oods.thelast.component.main;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;

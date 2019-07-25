@@ -1,4 +1,4 @@
-package com.oods.thelast;
+package com.oods.thelast.component;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -6,6 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.oods.thelast.R;
 
 public class AdminActivity extends AppCompatActivity implements View.OnClickListener{
     private CardView jasaId;
@@ -29,15 +31,15 @@ public class AdminActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         Intent i;
         switch (view.getId()){
-            case R.id.jasaId : i = new Intent(this,ListActivity.class);
+            case R.id.jasaId : i = new Intent(this, ListData.class);
             startActivity(i);
             break;
 
-            case R.id.aboutId : i = new Intent(this, ListActivity.class);
+            case R.id.aboutId : i = new Intent(this, ListData.class);
             startActivity(i);
             break;
 
-            case R.id.exitId : i = new Intent(this, ListActivity.class);
+            case R.id.exitId : i = new Intent(this, ListData.class);
             startActivity(i);
             break;
         }

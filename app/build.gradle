@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
 
 dependencies {
@@ -54,5 +58,11 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:3.7.0'
     //noinspection GradleCompatible
     implementation 'com.android.support:design:27.1.1'
+    //noinspection GradleCompatible
+    implementation "com.android.support:recyclerview-v7:27.1.1"
+
+    //realm
+    implementation 'io.realm:android-adapters:2.0.0'
 }
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'realm-android'
